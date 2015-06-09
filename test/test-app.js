@@ -15,10 +15,29 @@ describe('node-kata:app', function () {
 
   it('creates files', function () {
     assert.file([
-      'bower.json',
       'package.json',
       '.editorconfig',
-      '.jshintrc'
+      '.jshintrc',
+      '.gitignore'
     ]);
   });
+
+  it('creates an app folder which contains app and spec files', function () {
+    assert.file([
+      'app/app.js',
+      'app/app.spec.js'
+    ])
+  });
+
+  it('should create a gulpfile', function () {
+    assert.file([
+      'gulpfile.js'
+    ]);
+  });
+
+  it('should create a helpers file that can be used to import test globals', function () {
+    assert.file([
+      'helpers.js'
+    ]);
+  })
 });

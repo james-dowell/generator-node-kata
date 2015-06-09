@@ -1,5 +1,19 @@
 {
-  "name": "package",
-  "version": "0.0.0",
-  "dependencies": {}
+  "name": "Node kata project",
+  "version": "0.0.1",
+  "author": "https://github.com/james-dowell",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^3.7.0"
+  },
+  "devDependencies": {
+    "chai": "^2.2.0",
+    "gulp": "^3.8.11",
+    "gulp-watch": "^4.2.4",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-mocha": "^2.0.1",
+    "mocha": "^2.2.5",
+    "sinon": "^1.14.1",
+    "sinon-chai": "^2.8.0"
+  }
 }
