@@ -5,6 +5,17 @@ var yosay = require('yosay');
 
 module.exports = yeoman.generators.Base.extend({
 
+    constructor: function () {
+        yeoman.generator.Base.apply(this, arguments);
+
+        this.argument('kataname', {
+            type: String,
+            required: true
+        });
+
+        this.kataName = this._.camelize(this.kataname)
+    },
+
     prompting: function () {
         var done = this.async();
 
@@ -15,15 +26,13 @@ module.exports = yeoman.generators.Base.extend({
 
         var prompts = [{
             type: 'confirm',
-            name: 'someOption',
-            message: 'Would you like to enable this option?',
-            default: true
+            name: 'babel',
+            message: 'Would you like enable ES6 usage (babel)',
+            default: false
         }];
 
         this.prompt(prompts, function (props) {
             this.props = props;
-          // To access props later use this.props.someOption;
-
             done();
         }.bind(this));
     },
