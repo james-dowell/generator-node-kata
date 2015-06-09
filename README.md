@@ -1,9 +1,31 @@
-# generator-node-kata [![Build Status](https://secure.travis-ci.org/james-dowell/generator-node-kata.png?branch=master)](https://travis-ci.org/james-dowell/generator-node-kata)
+# generator-node-kata
 
 > [Yeoman](http://yeoman.io) generator
 
 
 ## Getting Started
+
+Hey there, 
+
+Thanks for checking out my node code kata generator, yo can install it with Yeoman or fork the base repo which can be found [here](https://github.com/james-dowell/node-kata-base-project)
+
+####Roadmap
+ - Include babel (for ES6+ compatability)
+
+
+I will be compiling a list of Kata's that I have done using this project and you can check it out [here](http://jamesdowell.me)
+
+### Usage
+
+To run the tests without watching the files (single run) use the following gulp command:
+```
+gulp test
+```
+
+To run the tests and watch the files use the following gulp command:
+```
+gulp test:auto
+```
 
 ### What is Yeoman?
 
@@ -40,6 +62,13 @@ yo node-kata
 Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
 
 If you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).
+
+
+## Libraries included by default
+
+- [Mocha](http://mochajs.org/) 
+- [ChaiJS](http://chaijs.com/)
+- [SinonJS](http://sinonjs.org/)
 
 
 ## License
