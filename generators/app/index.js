@@ -40,7 +40,7 @@ module.exports = yeoman.generators.Base.extend({
     },
 
     scaffoldFolders: function(done){
-        mkdirp("app", done);
+        mkdirp('app');
     },
 
     writing: {

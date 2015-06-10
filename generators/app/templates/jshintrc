@@ -13,5 +13,11 @@
   "quotmark": "single",
   "undef": true,
   "unused": true,
-  "strict": true
+  "strict": true,
+  "globals": {
+    "sinon": false,
+    "it": false,
+    "describe": false,
+    "expect": false
+  }
 }
