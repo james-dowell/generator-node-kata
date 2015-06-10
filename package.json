@@ -1,9 +1,8 @@
 {
   "name": "generator-node-kata",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Yeoman generator",
   "license": "MIT",
-  "main": "app/index.js",
   "repository": "james-dowell/generator-node-kata",
   "author": {
     "name": "James Dowell",
