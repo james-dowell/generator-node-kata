@@ -9,13 +9,6 @@ module.exports = yeoman.generators.Base.extend({
 
     constructor: function () {
         yeoman.generators.Base.apply(this, arguments);
-
-        // this.argument('kataname', {
-        //     type: String,
-        //     required: true
-        // });
-        // console.log(this._);
-        // this.kataName = _.camelCase(this.kataname);
     },
 
     prompting: function () {
@@ -26,12 +19,6 @@ module.exports = yeoman.generators.Base.extend({
             'Welcome to the outstanding ' + chalk.red('NodeKata') + ' generator!'
             ));
 
-        // var prompts = [{
-        //     type: 'confirm',
-        //     name: 'babel',
-        //     message: 'Would you like enable ES6 usage (babel)',
-        //     default: false
-        // }];
         var prompts = [];
 
         this.prompt(prompts, function (props) {
