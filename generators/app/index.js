@@ -2,18 +2,20 @@
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
+var _ = require('lodash');
+var mkdirp = require('mkdirp');
 
 module.exports = yeoman.generators.Base.extend({
 
     constructor: function () {
-        yeoman.generator.Base.apply(this, arguments);
+        yeoman.generators.Base.apply(this, arguments);
 
         this.argument('kataname', {
             type: String,
             required: true
         });
-
-        this.kataName = this._.camelize(this.kataname)
+        console.log(this._);
+        this.kataName = _.camelCase(this.kataname);
     },
 
     prompting: function () {
@@ -37,8 +39,8 @@ module.exports = yeoman.generators.Base.extend({
         }.bind(this));
     },
 
-    scaffoldFolders: function(){
-        this.mkdir("app");
+    scaffoldFolders: function(done){
+        mkdirp("app", done);
     },
 
     writing: {
@@ -88,6 +90,6 @@ module.exports = yeoman.generators.Base.extend({
     },
 
     install: function () {
-        this.installDependencies();
+        this.npmInstall();
     }
 });

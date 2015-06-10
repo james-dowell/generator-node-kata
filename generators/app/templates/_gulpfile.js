@@ -1,3 +1,5 @@
+'use strict';
+
 var gulp = require('gulp');
 
 var $ = require('gulp-load-plugins')();
@@ -18,7 +20,7 @@ gulp.task('test', function () {
 
 });
 
-gulp.task('test:auto', function (done) {
+gulp.task('test:auto', ['test'], function (done) {
 
     gulp.task('test:watch', ['test']);
     gulp.watch(files, ['test:watch']);

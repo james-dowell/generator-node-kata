@@ -1,3 +1,5 @@
+'use strict';
+
 var App = require('./app');
 
 describe("Something", function(){
