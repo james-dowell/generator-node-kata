@@ -1,12 +1,11 @@
 {
   "name": "generator-node-kata",
   "version": "0.0.1",
-  "description": "Yeoman generator",
+  "description": "A yeoman generator that creates a simple base project to practice javascript code kata's",
   "license": "MIT",
   "repository": "james-dowell/generator-node-kata",
   "author": {
     "name": "James Dowell",
-    "email": "",
     "url": "https://github.com/james-dowell"
   },
   "scripts": {
@@ -16,7 +15,13 @@
     "generators"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "generator-node-kata",
+    "node kata"
+    "node",
+    "kata",
+    "code kata",
+    "base project"
   ],
   "dependencies": {
     "yeoman-generator": "^0.19.0",
@@ -26,6 +31,6 @@
   "devDependencies": {
     "lodash": "^3.9.3",
     "mkdirp": "^0.5.1",
-    "mocha": "*"
+    "mocha": "^2.2.5"
   }
 }
