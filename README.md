@@ -6,10 +6,6 @@ Hey there,
 
 Thanks for checking out my node code kata generator, you can install it with Yeoman or fork the base repo which can be found [here](https://github.com/james-dowell/node-kata-base-project)
 
-####Roadmap
- - **0.0.3** Include babel (for ES6+ compatability)
-
-
 ### Usage
 
 To install generator-node-kata from npm, run:
@@ -33,6 +29,10 @@ To run the tests and watch the files use the following gulp command:
 ```
 gulp test:auto
 ```
+
+####Roadmap
+ - **0.0.3** Include babel (for ES6+ compatability)
+
 
 ### What is Yeoman?
 
