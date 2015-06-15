@@ -8,6 +8,7 @@ var mkdirp = require('mkdirp');
 module.exports = yeoman.generators.Base.extend({
 
     constructor: function () {
+
         yeoman.generators.Base.apply(this, arguments);
     },
 
@@ -33,20 +34,23 @@ module.exports = yeoman.generators.Base.extend({
 
     writing: {
         app: function () {
-            this.fs.copy(
-                this.templatePath('_package.json'),
-                this.destinationPath('package.json')
-            );
+            // this.fs.copy(
+            //     this.templatePath('_package.json'),
+            //     this.destinationPath('package.json')
+            // );
+
+            this.template("_package.json", "package.json");
 
             this.fs.copy(
                 this.templatePath('_.gitignore'),
                 this.destinationPath('.gitignore')
             );
 
-            this.fs.copy(
-                this.templatePath('_gulpfile.js'),
-                this.destinationPath('gulpfile.js')
-            );
+            // this.fs.copy(
+            //     this.templatePath('_gulpfile.js'),
+            //     this.destinationPath('gulpfile.js')
+            // );
+            this.template("_gulpfile.js", "gulpfile.js");
 
             this.fs.copy(
                 this.templatePath('_helpers.js'),

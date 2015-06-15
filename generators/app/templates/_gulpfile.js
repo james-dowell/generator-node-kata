@@ -26,3 +26,14 @@ gulp.task('test:auto', ['test'], function (done) {
     gulp.watch(files, ['test:watch']);
 
 });
+
+<% if (babel == true) { %>
+
+  gulp.task('es6', function () {
+
+    return gulp.src(files)
+      .pipe($.babel())
+      .pipe(gulp.dest('dist'));
+  });
+
+<% } %>
